@@ -148,7 +148,7 @@ else:
     CORS_ALLOWED_ORIGINS = config(
         "CORS_ALLOWED_ORIGINS",
         cast=Csv(),
-        default="https://carefor-seniors.com,https://www.carefor-seniors.com",
+        default="https://carefor-seniors.com,https://www.carefor-seniors.com"
     )
 
 # ===============================
