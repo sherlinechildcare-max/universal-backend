@@ -147,7 +147,7 @@ if DEBUG:
 else:
     CORS_ALLOWED_ORIGINS = config(
         "CORS_ALLOWED_ORIGINS",
-        cast=Csv(),
+        cast=Csv(),  # This handles the comma-separated values automatically
         default="https://carefor-seniors.com,https://www.carefor-seniors.com"
     )
 
