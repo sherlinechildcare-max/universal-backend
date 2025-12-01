@@ -189,5 +189,5 @@ X_FRAME_OPTIONS = "DENY"
 # Axes Configuration
 # ===============================
 AXES_FAILURE_LIMIT = 5
-AXES_COOLOFF_TIME = 1  # 1 hour
+AXES_COOLOFF_TIME = 1  # in hours
 AXES_ONLY_USER_FAILURES = True
