@@ -13,7 +13,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool, default=False)
 ALLOWED_HOSTS = ['carefor-seniors.com', 'www.carefor-seniors.com']
-
 CSRF_TRUSTED_ORIGINS = ['https://carefor-seniors.com', 'https://www.carefor-seniors.com']
 
 # ===============================
@@ -137,7 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
 else:
-    CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', cast=Csv(), default='https://carefor-seniors.com').split(',')
+    CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', cast=Csv())
 
 # ===============================
 # REST Framework
